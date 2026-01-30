@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #f2f7ff;
+  color: #1f2933;
+}
+
+/* NAVIGATION */
+nav {
+  background-color: #002b5b;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: #9fd3ff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* GRID LAYOUT */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* CARD STYLE */
+.card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 43, 91, 0.15);
+  text-align: center;
+}
+
+/* FULL WIDTH SECTION */
+.full-width {
+  grid-column: 1 / -1;
+}
+
+/* IMAGES */
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+  color: #002b5b;
+}
+
+/* LIST */
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  padding: 6px 0;
+  font-size: 16px;
+}
+
+/* SERVICES COLUMNS */
+.columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* FORM */
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+  font-weight: 500;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #b6d9ff;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #002b5b;
+}
+
+/* BUTTON */
+button {
+  background-color: #002b5b;
+  color: #ffffff;
+  border: none;
+  padding: 10px 25px;
+  margin-top: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00509e;
+}
+
+/* FORM MESSAGE */
+#formMsg {
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  background-color: #002b5b;
+  color: #9fd3ff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .grid-container {
+    padding: 20px;
+  }
+}
